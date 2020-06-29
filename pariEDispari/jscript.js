@@ -1,13 +1,20 @@
 document.getElementById("btn").addEventListener("click", function (){
   //L’utente sceglie pari o dispari e inserisce un numero da 1 a 5
-  var numUtente=document.getElementById("numUtente").value;
+  var numUtente=parseInt(document.getElementById("numUtente").value);
   var scomessaUtente=document.getElementById("parioDispari").value;
   var numPC= randomNum(1,5);
+  var somma=numUtente + numPC;
   //Dichiariamo chi ha vinto.
-  var ris=checkParioDispari(numUtente , numPC)
-  console.log(numPC,ris);
+  // var ris=checkParioDispari(numUtente , numPC)
+  // console.log(numPC,ris);
 
-  // function
+  if (checkParioDispari(somma) == scomessaUtente) {
+    console.log("hai vinto");
+  }else {
+    console.log("hai perso");
+  }
+
+  // functions
   // Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
 
   function randomNum(min, max) {
@@ -15,12 +22,11 @@ document.getElementById("btn").addEventListener("click", function (){
   }
 
   // Sommiamo i due numeri Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
-  function checkParioDispari(num1, num2) {
-    var temp = num1 + num2;
-    if (temp % 2 == 0) {
-      return true;
+  function checkParioDispari(num) {
+    if (num % 2 == 0) {
+      return 0;
     }else {
-      return false;
+      return 1;
     }
   }
 

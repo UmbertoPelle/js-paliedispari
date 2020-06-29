@@ -8,6 +8,7 @@ document.getElementById("btn").addEventListener("click", function (){
   // var ris=checkParioDispari(numUtente , numPC)
   // console.log(numPC,ris);
 
+  console.log("Numero random pc",numPC);
   if (checkParioDispari(somma) == scomessaUtente) {
     console.log("hai vinto");
   }else {

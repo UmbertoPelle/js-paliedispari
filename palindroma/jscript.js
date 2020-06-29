@@ -1,6 +1,10 @@
 // Chiedere all’utente di inserire una parola
 var parolaUtente = prompt("inserisci la parola da controllare:");
-console.log(checkPalindroma(parolaUtente));
+if (checkPalindroma(parolaUtente) == false) {
+  console.log("la parola non è palindroma");
+} else {
+  console.log("la parola è palindroma");
+}
 
 
 

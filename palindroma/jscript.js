@@ -6,13 +6,10 @@ if (checkPalindroma(parolaUtente) == false) {
   console.log("la parola è palindroma");
 }
 
-
-
 //Creare una funzione per capire se la parola inserita è palindroma
 // function
 function checkPalindroma (parola) {
   // var palindroma = parola.split('').reverse().join('');
-
 
   var palindroma ="" ;
   for (var i = parola.length - 1; i >= 0 ; i--) {

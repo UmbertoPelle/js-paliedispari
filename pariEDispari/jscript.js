@@ -4,9 +4,7 @@ document.getElementById("btn").addEventListener("click", function (){
   var scomessaUtente=document.getElementById("parioDispari").value;
   var numPC= randomNum(1,5);
   var somma=numUtente + numPC;
-  //Dichiariamo chi ha vinto.
-  // var ris=checkParioDispari(numUtente , numPC)
-  // console.log(numPC,ris);
+  //Dichiariamo chi ha vinto. 
 
   console.log("Numero random pc",numPC);
   if (checkParioDispari(somma) == scomessaUtente) {
